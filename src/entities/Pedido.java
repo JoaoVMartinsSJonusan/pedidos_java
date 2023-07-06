@@ -50,14 +50,6 @@ public class Pedido {
         itens.remove(itensPedido);
     }
     
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
     public Double total() {
         Double total = 0.0;
         for (ItemDoPedido x : itens) {
