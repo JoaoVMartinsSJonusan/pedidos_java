@@ -1,18 +1,19 @@
-## Getting Started
+Esse código faz o cadastro do cliente com:
+- Nome;
+- Email;
+- Data de nascimento;
+- Status do pedido (utilizando a enumeração para que o status possa ser constante);
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Logo após pede a quantidade de pedidos para serem cadastrados, adicionando-os em uma lista, com os dados:
+- Nome do produto;
+- Preço;
+- Quantidade;
 
-## Folder Structure
+Ao final do programa é exibido na tela o momento exato em que o cliente fez o pedido (utiliza-se a data e hora local da maquina em que se esta rodando), mostra o status do pedido, os dados cadastrados do cliente e logo após todos os itens cadastrados separadamente Ex: nome: tv, valor: 2000, quantidade: 2, e mostra valor de cada item e o subtotal desse pedido, ao fim mostra o valor total que o cliente tem que pagar pelos produtos.
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+A pasta Application conta com o programa principal, onde o cliente é cadastrado com o pedido.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A pasta entities conta com as classes onde os dados sao armazenados e calculos sao feitos, contando com composições para usar os dados de uma classe em outra sem ter que herdar todos os metodos e atributos da mesma.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A pasta enums conta com enumeradores para classificar o status do pedido.
